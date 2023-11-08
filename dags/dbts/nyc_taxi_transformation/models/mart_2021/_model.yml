@@ -1,0 +1,105 @@
+version : 2
+models:
+  - name: monthly_total_passengers_2021
+    description: "Total passengers monthly 2021"
+    columns:
+      - name: name_month
+        description: "Month in format name"
+        tests:
+          - not_null
+      - name: total_passenger_count	
+        description: "Total passenger"
+        tests:
+          - not_null
+  - name: monthly_transactions_per_payment_type_2021
+    description: "Total transaction per payment type monthly 2021"
+    columns:
+      - name: name_month
+        description: "Month in format name"
+        tests:
+          - not_null
+      - name: total_payment_type	
+        description: "Total transaction by payment type"
+        tests:
+          - not_null
+      - name: payment_type	
+        description: "Payment type"
+        tests:
+          - not_null
+  - name: monthly_transactions_per_payment_type_2021_ver2
+    description: "Total transaction per payment type monthly 2021 with separated column payment type"
+    columns:
+      - name: name_month
+        description: "Month in format name"
+        tests:
+          - not_null
+      - name: transaction_type_1	
+        description: "Total transaction by payment type 1"
+        tests:
+          - not_null
+      - name: transaction_type_2	
+        description: "Total transaction by payment type 2"
+        tests:
+          - not_null
+      - name: transaction_type_3	
+        description: "Total transaction by payment type 3"
+        tests:
+          - not_null
+      - name: transaction_type_4	
+        description: "Total transaction by payment type 4"
+        tests:
+          - not_null
+      - name: transaction_type_5
+        description: "Total transaction by payment type 5"
+        tests:
+          - not_null
+      - name: transaction_type_6
+        description: "Total transaction by payment type 6"
+        tests:
+          - not_null
+  - name: monthly_trip_distance_per_rate_code_2021
+    description: "Total trip distance per rate code monthly 2021"
+    columns:
+      - name: name_month
+        description: "Month in format name"
+        tests:
+          - not_null
+      - name: total_trip_distance	
+        description: "Total trip distance by rate code"
+        tests:
+          - not_null
+      - name: RatecodeID	
+        description: "Rate code"
+        tests:
+          - not_null
+  - name: monthly_trip_distance_per_rate_code_2021_ver2
+    description: "Total trip distance per rate code monthly 2021 with separated column rate code"
+    columns:
+      - name: name_month
+        description: "Month in format name"
+        tests:
+          - not_null
+      - name: rate_code_1	
+        description: "Total trip distance by rate code 1"
+        tests:
+          - not_null
+      - name: rate_code_2
+        description: "Total trip distance by rate code 2"
+        tests:
+          - not_null
+      - name: rate_code_3
+        description: "Total trip distance by rate code 3"
+        tests:
+          - not_null
+      - name: rate_code_4
+        description: "Total trip distance by rate code 4"
+        tests:
+          - not_null
+      - name: rate_code_5
+        description: "Total trip distance by rate code 5"
+        tests:
+          - not_null
+      - name: rate_code_6
+        description: "Total trip distance by rate code 6"
+        tests:
+          - not_null

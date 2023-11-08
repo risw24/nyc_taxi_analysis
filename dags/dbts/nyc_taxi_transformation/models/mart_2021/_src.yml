@@ -1,0 +1,9 @@
+version : 2
+
+sources:
+  - name: nyc_taxi_int
+    database: brave-sonar-400508
+    schema: nyc_taxi_intermediate
+    tables:
+      - name: nyc_taxi_real_trip_2021
+        identifier: int_nyc_taxi_real_trip_2021

@@ -1,0 +1,9 @@
+version : 2
+
+sources:
+  - name: nyc_taxi
+    database: brave-sonar-400508
+    schema: nyc_taxi
+    tables:
+      - name: raw_nyc_taxi_trip
+        identifier: raw_nyc_taxi_trip

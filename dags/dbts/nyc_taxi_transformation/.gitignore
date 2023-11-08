@@ -1,0 +1,5 @@
+
+target/
+dbt_packages/
+logs/
+brave-sonar-400508-1b40a9925807.json
